@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vérification de mot de passe </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <div class="container">
+        
+        <form action="">
+            <label for=""> Utilisateur </label>
+            <input type="text" required>
+
+            <label for=""> Password </label>
+            <input type="password" id="password" required>
+
+            <input type="submit" value="Envoyer">
+
+        </form>
+    </div>
+
+    <div id="messages">
+        <h3> Le Mot de passe doit contenir les élèments suivants :</h3>
+        <p id="letter" class="invalid"> Une lettre Miniscule</p>
+        <p id="capital" class="invalid"> Une lettre Majuscule</p>
+        <p id="number" class="invalid"> Un chiffre </p>
+        <p id="length" class="invalid"> 8 Caractères Minimum</p>
+    </div>
+    
+</body>
+</html>
